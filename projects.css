@@ -19,7 +19,7 @@
 body {
 	font-family: 'open_sanslight';
 	font-size:13px;
-	color:#919191;
+	color:#ababab;
 }
 
 /*------------------------------------*\
@@ -45,7 +45,9 @@ body {
 }
 
 #topborder {
-	border-top:1px dashed #919191;
+	border-top:1px dashed #ababab;
+	float:left;
+	clear:left;
 }
 
 /*------------------------------------*\
@@ -89,74 +91,24 @@ body {
 #nav #current {
 	color:#00c7fc;
 }
-/*------------------------------------*\
-				PROJECTS
-\*------------------------------------*/
-
-#projects a {
-	text-decoration:none;
-}
-
-#projects img {
-	opacity:1;
-	width:30%;
-	max-width:250px;
-	margin-top:20px;
-}
-
-#projects {
-	text-align:center;
-	clear:left;
-}
-
-#projects #geisha {
-	margin-right:20px;
-}
-
-#projects #controlroom {
-	margin-right:20px;
-}
-
-#projects #fan {
-	margin-right:20px;
-}
-
-#projects #magazine {
-	margin-right:20px;
-}
-
-#projects img:hover {
-	opacity:0.4;
-	
-	-webkit-transition: opacity 1s;
-	-moz-transition: opacity 1s;
-	-o-transition: opacity 1s;
-	transition: opacity 1s;
-}
 
 /*------------------------------------*\
 				FOOTER
 \*------------------------------------*/
 
 footer {
-	border-top:1px dashed #919191;
+	border-top:1px dashed #ababab;
 	margin-top:20px;
-	padding-top:20px;
 	text-align:center;
 	font-size:10px;
+	clear:left;
 }
 
 /*------------------------------------*\
-				RESPONSIVE
+	    	RESPONSIVE [ MENU ]
 \*------------------------------------*/
 
 @media screen and (max-width: 1200px) {
-	#projects img {
-		width:25%;
-		max-width:250px;
-		margin-top:20px;
-	}
-	
 	#nav ul {
 		margin-left:10px;
 	}
@@ -237,16 +189,6 @@ footer {
 		max-width:90%;
 		padding-left:10px;
 	}
-	
-	#projects img {
-		width:50%;
-	}
-}
-
-@media screen and (max-width: 730px) {
-	#projects img {
-		width:40%;
-	}
 }
 
 @media screen and (max-width: 460px) {
@@ -260,22 +202,96 @@ footer {
 		padding:10px;
 	}
 	
-	#projects img {
-		width:100%;
-		margin-right:0px;
-		padding:0;
-		max-width:500px;
-	}
-	
-	#projects #geisha {
-		margin-right:0px;
-	}
-	
-	#projects #controlroom {
-		margin-right:0px;
-	}
 	#nav ul {
 		margin-top:20px;
 		margin-bottom:20px;
+	}
+}
+
+/*------------------------------------*\
+				GEISHA
+\*------------------------------------*/
+
+#geisha {
+	text-align:justify;
+	float:left;
+	clear:left;
+	width:45%;
+	padding-right:30px;
+	opacity:1;
+	margin-top:5%;
+}
+
+img:hover {
+	opacity:0.4;
+	
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#geisha strong {
+	color:#00c7fc;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:10px;
+}
+
+#gei {
+	margin-top:30px;
+	margin-left:20px;
+	margin-right:3%;
+	float:right;
+	border:1px black solid;
+	width:20%;
+	max-width:200px;
+}
+
+#geisketch {
+	width:20.2%;
+	border:1px black solid;
+	max-width:200px;
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+	margin-top:30px;
+}
+
+#desc {
+	float:left;
+}
+
+/*------------------------------------*\
+		RESPONSIVE [ IMAGES ]
+\*------------------------------------*/
+
+@media screen and (max-width: 1125px) {
+	#geisha {
+		margin-top:3%;
+	}
+}
+
+@media screen and (max-width: 1070px) {
+	#geisha {
+		margin-top:10px;
+	}
+	
+	#topborder img {
+		margin-top:4%;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	#topborder img {
+		margin-top:5%;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	#topborder img {
+		margin-top:7%;
 	}
 }

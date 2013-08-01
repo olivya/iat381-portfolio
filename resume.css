@@ -46,6 +46,7 @@ body {
 
 #topborder {
 	border-top:1px dashed #919191;
+	clear:left;
 }
 
 /*------------------------------------*\
@@ -90,48 +91,15 @@ body {
 	color:#00c7fc;
 }
 /*------------------------------------*\
-				PROJECTS
+				RESUME
 \*------------------------------------*/
 
-#projects a {
-	text-decoration:none;
-}
-
-#projects img {
-	opacity:1;
-	width:30%;
-	max-width:250px;
+#resume {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 	margin-top:20px;
-}
-
-#projects {
-	text-align:center;
-	clear:left;
-}
-
-#projects #geisha {
-	margin-right:20px;
-}
-
-#projects #controlroom {
-	margin-right:20px;
-}
-
-#projects #fan {
-	margin-right:20px;
-}
-
-#projects #magazine {
-	margin-right:20px;
-}
-
-#projects img:hover {
-	opacity:0.4;
-	
-	-webkit-transition: opacity 1s;
-	-moz-transition: opacity 1s;
-	-o-transition: opacity 1s;
-	transition: opacity 1s;
+	max-width:100%;
 }
 
 /*------------------------------------*\
@@ -141,7 +109,8 @@ body {
 footer {
 	border-top:1px dashed #919191;
 	margin-top:20px;
-	padding-top:20px;
+	padding-top:10px;
+	padding-bottom:10px;
 	text-align:center;
 	font-size:10px;
 }
