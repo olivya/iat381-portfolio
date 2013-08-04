@@ -5,6 +5,20 @@
 	<meta name="viewport" content="width=device-width"/>		
 	<title>olivya striloff</title>
 	<link rel="stylesheet" type="text/CSS" href="projects.css"/>
+		
+	<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+
+	<script src="js/magnific-popup.js">	</script>
+	<script type="text/javascript">
+		$(document).ready(function () { 			
+			$('.test-popup-link').magnificPopup({ 
+			  type: 'image'
+				// other options
+			});
+		});
+	</script>
+	
 </head>
 	
 <body>
@@ -17,7 +31,7 @@
 	
 	<section id="nav">
 		<ul>
-			<li><a href="about.html">About</a></li>
+			<li><a href="about.html" class="test">About</a></li>
 			<li><a href="resume.html">Resume</a></li>
 			<li><a href="home.html">Projects</a></li>
 		</ul>
@@ -42,8 +56,8 @@
 				</p>
  			</section>	
  		
- 		<img id="gei" src="images/geisha.png" alt="Memoirs of a Geisha" width="225px" height="auto"/>
- 		<img id="geisketch" src="images/geisha-sketch.png" alt="Memoirs of a Geisha" width="228px" height="auto"/>
+ 		<a class="test-popup-link" href="images/geisha.png" data-effect="mfp-zoom-in"><img id="gei" src="images/geisha.png" alt="Memoirs of a Geisha" width="225px" height="auto"/></a>
+ 		<a class="test-popup-link" href="images/geisha-sketch.png" data-effect="mfp-zoom-in"><img id="geisketch" src="images/geisha-sketch.png" alt="Memoirs of a Geisha" width="228px" height="auto"/></a>
 
 		</div>
 	
