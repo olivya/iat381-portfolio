@@ -99,30 +99,29 @@ body {
 
 #projects img {
 	opacity:1;
-	width:30%;
-	max-width:250px;
 	margin-top:20px;
+	width:90%;
+	max-width:250px;
 }
 
 #projects {
 	text-align:center;
 	clear:left;
+	padding-bottom:20px;
 }
 
-#projects #geisha {
-	margin-right:20px;
+#projects a {
+	color:#000000;
+	letter-spacing:2px;
 }
 
-#projects #controlroom {
-	margin-right:20px;
-}
-
-#projects #fan {
-	margin-right:20px;
-}
-
-#projects #magazine {
-	margin-right:20px;
+#projects a:hover {
+	color:#00c7fc;
+	
+	-webkit-transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-o-transition: color 0.4s;
+	transition: color 0.4s;
 }
 
 #projects img:hover {
@@ -134,16 +133,41 @@ body {
 	transition: opacity 1s;
 }
 
+.projs {
+	float:left;
+	width:30%;
+}
+
+.proj2 {
+	float:left;
+	padding-bottom:20px;
+	width:30%;
+}
+
+.proj2ndrow {
+	clear:left;
+	max-width:90%;
+	display:block;
+	margin-left:auto;
+}
+
+.proj1strow {
+	clear:left;
+	max-width:90%;
+	display:block;
+	margin-left:auto;
+}
+
 /*------------------------------------*\
 				FOOTER
 \*------------------------------------*/
 
 footer {
 	border-top:1px dashed #919191;
-	margin-top:20px;
 	padding-top:20px;
 	text-align:center;
 	font-size:10px;
+	clear:left;
 }
 
 /*------------------------------------*\
@@ -151,12 +175,6 @@ footer {
 \*------------------------------------*/
 
 @media screen and (max-width: 1200px) {
-	#projects img {
-		width:25%;
-		max-width:250px;
-		margin-top:20px;
-	}
-	
 	#nav ul {
 		margin-left:10px;
 	}
@@ -234,18 +252,24 @@ footer {
 	}
 	
 	#container {
-		max-width:90%;
+		max-width:95%;
 		padding-left:10px;
 	}
 	
-	#projects img {
-		width:50%;
+	.proj2ndrow {
+		max-width:100%;
 	}
-}
-
-@media screen and (max-width: 730px) {
-	#projects img {
-		width:40%;
+	
+	.proj1strow {
+		max-width:100%;
+	}
+	
+	.projs {
+		width:33%;
+	}
+	
+	.proj2 {
+		width:33%;
 	}
 }
 
@@ -262,20 +286,22 @@ footer {
 	
 	#projects img {
 		width:100%;
-		margin-right:0px;
-		padding:0;
-		max-width:500px;
+		clear:left;
+		max-width:100%;
 	}
 	
-	#projects #geisha {
-		margin-right:0px;
-	}
-	
-	#projects #controlroom {
-		margin-right:0px;
-	}
 	#nav ul {
-		margin-top:20px;
+		padding-top:20px;
 		margin-bottom:20px;
+	}
+	
+	.projs {
+		clear:left;
+		width:100%;
+	}
+	
+	.proj2 {
+		clear:left;
+		width:100%;
 	}
 }
