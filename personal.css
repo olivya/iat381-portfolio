@@ -317,7 +317,7 @@ footer {
 	text-align:justify;
 	float:left;
 	clear:left;
-	width:35%;
+	width:45%;
 	padding-right:30px;
 	opacity:1;
 	margin-top:25px;
@@ -355,7 +355,7 @@ footer {
 	float:left;
 }
 
-#topborder img:hover {
+img:hover {
 	cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
 }
 
