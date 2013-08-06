@@ -228,9 +228,9 @@ footer {
 	
 	#nav ul li {
 		background:#fff;
-		margin-bottom:40px;
-		margin-top:20px;
+		margin-top:-10px;
 	}
+	
 	
 	#header {
 		width:100%;
@@ -293,6 +293,10 @@ footer {
 	
 	ul.dropdown ul { 
 		top:20px;
+	}
+	
+	#nav {
+		padding-left:10px;
 	}
 }
 
@@ -440,23 +444,10 @@ footer {
 	}
 }
 
-/*
-@media screen and (max-width: 628px) {
-	#controlroom {
-		margin-top:187px;
-	}
-}
-
-@media screen and (max-width: 564px) {
-	#controlroom {
-		margin-top:185px;
-	}
-}
-*/
-
 /*------------------------------------*\
 MAGNIFIC POPUP { plugins.jquery.com/magnific-popup }
 Courtesy of Dmitry Semenov
+{ Full list of resources is in Stretch Goals PDF }
 \*------------------------------------*/
 
 

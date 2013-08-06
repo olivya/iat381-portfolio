@@ -1,7 +1,9 @@
 // I edited this jQuery dropdown menu by Chris Coyier: css-tricks.com/simple-jquery-dropdowns
-// using what we learned in the Week 10 jQuery lab tutorial (which was coded by Stanley Lai)
-// (I added a toggle function and made it so you had to click for the menu; not just hover)
+// using what we learned in the Week 10 jQuery lab tutorial.
+// (I added a toggle function and made it so you had to click for the menu; not just hover,
+// as well as adding fade in/out functions.)
 // - Olivya
+// { Full list of resources is in Stretch Goals PDF }
 
 $(function(){
     $("ul.dropdown li").click(function(){

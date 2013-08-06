@@ -234,9 +234,9 @@ footer {
 	
 	#nav ul li {
 		background:#fff;
-		margin-bottom:40px;
-		margin-top:20px;
+		margin-top:-10px;
 	}
+	
 	
 	#header {
 		width:100%;
@@ -298,5 +298,8 @@ footer {
 	}
 	ul.dropdown ul { 
 		top:20px;
+	}
+	#nav {
+		padding-left:10px;
 	}
 }

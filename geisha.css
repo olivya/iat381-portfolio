@@ -225,8 +225,7 @@ footer {
 	
 	#nav ul li {
 		background:#fff;
-		margin-bottom:40px;
-		margin-top:20px;
+		margin-top:-10px;
 	}
 	
 	#header {
@@ -291,6 +290,60 @@ footer {
 	ul.dropdown ul { 
 		top:20px;
 	}
+	#nav {
+		padding-left:10px;
+	}
+}
+
+/*------------------------------------*\
+				GEISHA
+\*------------------------------------*/
+
+#geisha {
+	text-align:justify;
+	float:left;
+	clear:left;
+	width:45%;
+	padding-right:30px;
+	opacity:1;
+	margin-top:4%;
+}
+
+img:hover {
+	cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+}
+
+#geisha strong {
+	color:#00c7fc;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:10px;
+}
+
+#gei {
+	margin-left:20px;
+	margin-right:3%;
+	float:right;
+	border:1px black solid;
+	margin-top:30px;
+	height:250px;
+	width:auto;
+}
+
+#geisketch {
+	border:1px black solid;
+	height:250px;
+	width:auto;
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+	margin-top:30px;
+}
+
+#desc {
+	float:left;
 }
 
 /*------------------------------------*\
@@ -301,6 +354,7 @@ footer {
 	#geisha {
 		margin-top:3%;
 	}
+
 	#topborder img {
 		margin-top:3.5%;
 	}
@@ -420,71 +474,11 @@ footer {
 	}
 }
 
-/*------------------------------------*\
-				GEISHA
-\*------------------------------------*/
-
-#geisha {
-	text-align:justify;
-	float:left;
-	clear:left;
-	width:45%;
-	padding-right:30px;
-	opacity:1;
-	margin-top:4%;
-}
-
-#topborder img:hover {
-	cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
-}
-
-#topborder img {
-	margin-top:3.5%;
-}
-	
-#geisha strong {
-	color:#00c7fc;
-	text-transform:uppercase;
-	letter-spacing:2px;
-	font-size:10px;
-}
-
-#title {
- 	text-transform:uppercase;
-	letter-spacing:2px;
-	font-size:10px;
-}
-
-#gei {
-	margin-left:20px;
-	margin-right:3%;
-	float:right;
-	border:1px black solid;
-
-	height:250px;
-	width:auto;
-}
-
-#geisketch {
-	border:1px black solid;
-	height:250px;
-	width:auto;
-	
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	
-	margin-top:30px;
-}
-
-#desc {
-	float:left;
-}
-
 
 /*------------------------------------*\
 MAGNIFIC POPUP { plugins.jquery.com/magnific-popup }
 Courtesy of Dmitry Semenov
+{ Full list of resources is in Stretch Goals PDF }
 \*------------------------------------*/
 
 .mfp-bg {
