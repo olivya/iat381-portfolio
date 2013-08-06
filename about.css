@@ -300,6 +300,10 @@ footer {
 		clear:left;
 		width:100%;
 	}
+	
+	ul.dropdown ul { 
+		top:20px;
+	}
 }
 
 /*------------------------------------*\

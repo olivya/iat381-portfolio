@@ -278,6 +278,10 @@ footer {
 		margin-top:20px;
 		margin-bottom:20px;
 	}
+	
+	ul.dropdown ul { 
+		top:20px;
+	}
 }
 
 /*------------------------------------*\
