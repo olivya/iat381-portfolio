@@ -88,7 +88,7 @@ body {
 
 /* DROPDOWN STYLING */
 
-#nav #current {
+#nav .current {
 	color:#00c7fc;
 }
 
@@ -117,9 +117,10 @@ ul.dropdown ul {
 	visibility: hidden;
 	position: absolute;
 	top: 10px;
-	left: -40px;
+	left: -65px;
 	background:white;
 	border:1px dashed black;
+	padding-top:5px;
 }
 
 ul.dropdown ul li {
@@ -132,12 +133,20 @@ ul.dropdown ul li a	{
 	display: inline-block;
 	text-transform:lowercase;
 	text-align:center;
+	margin-bottom:5px;
 } 
 
-#all {
+ul.dropdown .current {
 	text-transform:uppercase;
-	margin-left:25px;
-} 
+}
+
+#down {
+	visibility:hidden;
+}
+
+#down,#side {
+	margin-left:5px;
+}
 
 /*------------------------------------*\
 				PROJECTS
@@ -158,6 +167,7 @@ ul.dropdown ul li a	{
 	text-align:center;
 	clear:left;
 	padding-bottom:20px;
+	z-index:-1;
 }
 
 #projects a {
@@ -233,26 +243,26 @@ footer {
 				RESPONSIVE
 \*------------------------------------*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	#nav ul {
 		margin-left:10px;
 	}
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1260px) {
 	#nav ul {
 		margin-top:9%;
 		margin-left:5px;
 	}
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1260px) {
 	#nav ul {
 		margin-left:0px;
 	}
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1225px) {
 	#nav ul li {
 		padding-right:-1%;
 	}
@@ -261,7 +271,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1057px) {
+@media screen and (max-width: 1157px) {
 	#nav ul li {
 		padding-right:-2%;
 	}
@@ -270,7 +280,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1110px) {
 	#nav ul li {
 		padding-right:-4%;
 	}
@@ -279,7 +289,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 1080px) {
 	#nav ul li {
 		padding-right:18px;
 	}
@@ -289,7 +299,7 @@ footer {
 }
 
 /*HEADER 100% WIDTH*/
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 975px) {
 	#nav {
 		width:300px;
 		margin-left:auto;
@@ -298,16 +308,18 @@ footer {
 	
 	#nav ul {
 		float:center;
-		margin-top:20px;
 	}
 	
 	#nav ul li {
 		background:#fff;
+		margin-bottom:40px;
+		margin-top:20px;
 	}
 	
 	#header {
 		width:100%;
 		max-width:845px;
+		margin-top:0px;
 	}
 	
 	#container {
@@ -330,6 +342,10 @@ footer {
 	.proj2 {
 		width:33%;
 	}
+	
+	ul.dropdown ul {
+		left: -40px;
+	}
 }
 
 @media screen and (max-width: 460px) {
@@ -347,11 +363,6 @@ footer {
 		width:100%;
 		clear:left;
 		max-width:100%;
-	}
-	
-	#nav ul {
-		padding-top:20px;
-		margin-bottom:20px;
 	}
 	
 	.projs {

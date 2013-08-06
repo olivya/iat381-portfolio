@@ -59,6 +59,7 @@ body {
 	margin-bottom:30px;
 	margin-left:20px;
 	float:left;
+	z-index:2;
 }
 
 #nav ul li {
@@ -93,10 +94,6 @@ body {
 
 /* DROPDOWN STYLING */
 
-#nav #current {
-	color:#00c7fc;
-}
-
 ul.dropdown {
 	position: relative;
 }
@@ -122,9 +119,10 @@ ul.dropdown ul {
 	visibility: hidden;
 	position: absolute;
 	top: 10px;
-	left: -40px;
+	left: -65px;
 	background:white;
 	border:1px dashed black;
+	padding-top:5px;
 }
 
 ul.dropdown ul li {
@@ -137,12 +135,22 @@ ul.dropdown ul li a	{
 	display: inline-block;
 	text-transform:lowercase;
 	text-align:center;
+	margin-bottom:5px;
 } 
+
+#down {
+	visibility:hidden;
+}
+
+#down,#side {
+	margin-left:5px;
+}
 
 #all {
 	text-transform:uppercase;
 	margin-left:25px;
 } 
+
 
 /*------------------------------------*\
 				RESUME
@@ -170,35 +178,29 @@ footer {
 }
 
 /*------------------------------------*\
-				RESPONSIVE
+				RESPONSIVE MENU
 \*------------------------------------*/
 
-@media screen and (max-width: 1200px) {
-	#projects img {
-		width:25%;
-		max-width:250px;
-		margin-top:20px;
-	}
-	
+@media screen and (max-width: 1300px) {
 	#nav ul {
 		margin-left:10px;
 	}
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1260px) {
 	#nav ul {
 		margin-top:9%;
 		margin-left:5px;
 	}
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1260px) {
 	#nav ul {
 		margin-left:0px;
 	}
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1225px) {
 	#nav ul li {
 		padding-right:-1%;
 	}
@@ -207,7 +209,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1057px) {
+@media screen and (max-width: 1157px) {
 	#nav ul li {
 		padding-right:-2%;
 	}
@@ -216,7 +218,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1110px) {
 	#nav ul li {
 		padding-right:-4%;
 	}
@@ -225,7 +227,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 1080px) {
 	#nav ul li {
 		padding-right:18px;
 	}
@@ -235,7 +237,7 @@ footer {
 }
 
 /*HEADER 100% WIDTH*/
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 975px) {
 	#nav {
 		width:300px;
 		margin-left:auto;
@@ -244,31 +246,43 @@ footer {
 	
 	#nav ul {
 		float:center;
-		margin-top:20px;
 	}
 	
 	#nav ul li {
 		background:#fff;
+		margin-bottom:40px;
+		margin-top:20px;
 	}
 	
 	#header {
 		width:100%;
 		max-width:845px;
+		margin-top:0px;
 	}
 	
 	#container {
-		max-width:90%;
+		max-width:95%;
 		padding-left:10px;
 	}
 	
-	#projects img {
-		width:50%;
+	.proj2ndrow {
+		max-width:100%;
 	}
-}
-
-@media screen and (max-width: 730px) {
-	#projects img {
-		width:40%;
+	
+	.proj1strow {
+		max-width:100%;
+	}
+	
+	.projs {
+		width:33%;
+	}
+	
+	.proj2 {
+		width:33%;
+	}
+	
+	ul.dropdown ul {
+		left: -40px;
 	}
 }
 
@@ -285,20 +299,17 @@ footer {
 	
 	#projects img {
 		width:100%;
-		margin-right:0px;
-		padding:0;
-		max-width:500px;
+		clear:left;
+		max-width:100%;
 	}
 	
-	#projects #geisha {
-		margin-right:0px;
+	.projs {
+		clear:left;
+		width:100%;
 	}
 	
-	#projects #controlroom {
-		margin-right:0px;
-	}
-	#nav ul {
-		margin-top:20px;
-		margin-bottom:20px;
+	.proj2 {
+		clear:left;
+		width:100%;
 	}
 }

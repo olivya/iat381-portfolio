@@ -10,11 +10,17 @@ $(function(){
 			if ($("ul.dropdown li").hasClass("on")) {
 				$(this).addClass("hover");
 				$('ul:first',this).css('visibility', 'visible');
+				// show/hide arrows:
+				$("#side").hide();
+				$("#down").css('visibility', 'visible');
 			}
 		
 			else {
 				$(this).removeClass("hover");
 				$('ul:first',this).css('visibility', 'hidden');
+				// show/hide arrows:
+				$("#side").show();
+				$("#down").css('visibility', 'hidden');
 			}
 			
 	});
