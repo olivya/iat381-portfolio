@@ -17,7 +17,7 @@
 }
 
 body {
-	font-family: 'open_sanslight';
+	font-family: 'open_sanslight',helvetica,arial;
 	font-size:13px;
 	color:#ababab;
 }
@@ -104,7 +104,7 @@ ul.dropdown {
 }
 
 ul.dropdown li { 
-	float: left; zoom: 1;
+	float: left;
 }
 
 ul.dropdown li a { 
@@ -120,11 +120,11 @@ ul.dropdown li.hover,ul.dropdown li:hover {
 }
 
 ul.dropdown ul { 
-	width: 160px;
+	width: 110px;
 	visibility: hidden;
 	position: absolute;
 	top: 10px;
-	left: -65px;
+	left: -5px;
 	background:white;
 	border:1px dashed black;
 	padding-top:5px;
@@ -192,27 +192,18 @@ footer {
 }
 
 @media screen and (max-width: 1225px) {
-	#nav ul li {
-		padding-right:-1%;
-	}
 	#nav ul {
 		margin-left:0px;
 	}
 }
 
 @media screen and (max-width: 1157px) {
-	#nav ul li {
-		padding-right:-2%;
-	}
 	#nav ul {
 		margin-left:-15px;
 	}
 }
 
 @media screen and (max-width: 1110px) {
-	#nav ul li {
-		padding-right:-4%;
-	}
 	#nav ul {
 		margin-left:-25px;
 	}
@@ -233,10 +224,6 @@ footer {
 		width:300px;
 		margin-left:auto;
 		margin-right:auto;
-	}
-	
-	#nav ul {
-		float:center;
 	}
 	
 	#nav ul li {
@@ -462,7 +449,8 @@ footer {
 */
 
 /*------------------------------------*\
-		    MAGNIFIC POPUP
+MAGNIFIC POPUP { plugins.jquery.com/magnific-popup }
+Courtesy of Dmitry Semenov
 \*------------------------------------*/
 
 
@@ -476,7 +464,7 @@ footer {
   position: fixed;
   background: #0b0b0b;
   opacity: 0.8;
-  filter: alpha(opacity=80); }
+}
 
 .mfp-wrap {
   top: 0;
@@ -544,9 +532,7 @@ footer {
 .mfp-arrow,
 .mfp-preloader,
 .mfp-counter {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none; }
+ }
 
 .mfp-loading.mfp-figure {
   display: none; }
@@ -764,7 +750,6 @@ img.mfp-img {
   text-align: left;
   line-height: 18px;
   color: #f3f3f3;
-  word-break: break-word;
   padding-right: 36px; }
 
 .mfp-figure small {
@@ -859,5 +844,4 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
-  
-}
+
