@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width"/>		
 	<title>olivya striloff</title>
 	<link rel="stylesheet" type="text/CSS" href="projects.css"/>
+	
+	<!-- Source: http://css-tricks.com/simple-jquery-dropdowns/ -->
+	<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>	
+	<script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
+
 </head>
 	
 <body>
@@ -16,11 +21,27 @@
 	</a>
 	
 	<section id="nav">
-		<ul>
-			<li><a href="about.html">About</a></li>
+	
+		<ul class="dropdown">
+			<li><a href="about.html" class="test">About</a></li>
 			<li><a href="resume.html">Resume</a></li>
-			<li><a href="home.html">Projects</a></li>
+			
+			<!-- Begin dropdown menu -->
+			<li><a href="#">Projects</a>
+				<ul class="sub_menu">
+					 <li><a href="geisha.html">Geisha Poster</a></li>
+					 <li><a id="current" href="conceptart.html">Concept Art</a></li>
+					 <li><a href="personal.html">Personal Work</a></li>
+					 <li><a href="#">Magazine Spreads</a></li>
+					 <li><a href="#">Fan Animation</a></li>
+					 <li><a id="push" href="#">Multilinear Narrative</a></li>
+					 <li><a id="all" href="home.html">See All</a></li>
+				</ul>
+			</li>
+			<!-- End dropdown menu -->
+			
 		</ul>
+		
 	</section>
 		
 		<div id="topborder">			

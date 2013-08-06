@@ -86,9 +86,59 @@ body {
 	transition: color 0.4s;
 }
 
+/* DROPDOWN STYLING */
+
 #nav #current {
 	color:#00c7fc;
 }
+
+ul.dropdown {
+	position: relative;
+}
+
+ul.dropdown li { 
+	float: left; zoom: 1;
+}
+
+ul.dropdown li a { 
+	display: block;
+}
+
+ul.dropdown li:last-child a { 
+	border-right: none;
+}
+
+ul.dropdown li.hover,ul.dropdown li:hover {
+	position: relative; 
+}
+
+ul.dropdown ul { 
+	width: 160px;
+	visibility: hidden;
+	position: absolute;
+	top: 10px;
+	left: -40px;
+	background:white;
+	border:1px dashed black;
+}
+
+ul.dropdown ul li {
+	float:none;
+	margin-left:-33px;
+}
+
+ul.dropdown ul li a	{
+	border-right: none;
+	display: inline-block;
+	text-transform:lowercase;
+	text-align:center;
+} 
+
+#all {
+	text-transform:uppercase;
+	margin-left:25px;
+} 
+
 /*------------------------------------*\
 				PROJECTS
 \*------------------------------------*/
@@ -124,7 +174,16 @@ body {
 	transition: color 0.4s;
 }
 
-#projects img:hover {
+.projs:hover {
+	opacity:0.4;
+	
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.proj2:hover {
 	opacity:0.4;
 	
 	-webkit-transition: opacity 1s;
@@ -164,7 +223,7 @@ body {
 
 footer {
 	border-top:1px dashed #919191;
-	padding-top:20px;
+	padding-top:10px;
 	text-align:center;
 	font-size:10px;
 	clear:left;
@@ -276,7 +335,7 @@ footer {
 @media screen and (max-width: 460px) {
 	#header {
 		margin-top:0;
-		margin-bottom:0;
+		margin-bottom:20px;
 	}
 	
 	#container {
