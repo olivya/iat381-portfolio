@@ -150,7 +150,7 @@ ul.dropdown ul li a	{
 
 #all {
 	text-transform:uppercase;
-	margin-left:25px;
+	margin-right:-25px;
 } 
 
 /*------------------------------------*\
@@ -298,6 +298,23 @@ footer {
 	text-align:justify;
 	max-width:60%;
 	position:relative;
+}
+
+#about a {
+	color:#00c7fc;
+	text-transform:uppercase;
+	text-decoration:none;
+	letter-spacing:2px;
+	font-size:10px;
+}
+
+#about a:hover {
+	color:#919191;
+	
+	-webkit-transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-o-transition: color 0.4s;
+	transition: color 0.4s;
 }
 
 #girl {

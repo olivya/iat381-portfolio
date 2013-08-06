@@ -138,6 +138,7 @@ ul.dropdown ul li a	{
 
 ul.dropdown .current {
 	text-transform:uppercase;
+	margin-right:-25px;
 }
 
 #down {
@@ -182,6 +183,28 @@ ul.dropdown .current {
 	-moz-transition: color 0.4s;
 	-o-transition: color 0.4s;
 	transition: color 0.4s;
+}
+
+#intro a {
+	color:#00c7fc;
+	text-decoration:none;
+	letter-spacing:4px;
+	font-size:11px;
+}
+
+#intro a:hover {
+	color:#919191;
+	
+	-webkit-transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-o-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+#intro {
+	letter-spacing:2px;
+	font-size:10px;
+	padding-top:15px;
 }
 
 .projs:hover {

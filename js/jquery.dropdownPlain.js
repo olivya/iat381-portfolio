@@ -9,7 +9,7 @@ $(function(){
     	
 			if ($("ul.dropdown li").hasClass("on")) {
 				$(this).addClass("hover");
-				$('ul:first',this).css('visibility', 'visible');
+				$('ul:first',this).css('visibility', 'visible').hide().fadeIn();
 				// show/hide arrows:
 				$("#side").hide();
 				$("#down").css('visibility', 'visible');
@@ -17,7 +17,7 @@ $(function(){
 		
 			else {
 				$(this).removeClass("hover");
-				$('ul:first',this).css('visibility', 'hidden');
+				$('ul:first',this).fadeOut("fast");
 				// show/hide arrows:
 				$("#side").show();
 				$("#down").css('visibility', 'hidden');
